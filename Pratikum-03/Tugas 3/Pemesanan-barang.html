@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Barang</title>
+</head>
+<body>
+    <form action="hasil-pemesanan.html">
+        <table style="background-color: goldenrod;" border="1" solid, align="center">
+            <style>
+                table{border-collapse: collapse;}
+            </style>
+            <tr>
+                <td align="center"><a href="/home">home</a>
+                </td>
+                <td align="center"><a href="/generat link">Generate link</a></td>
+                <td align="center"><a href="/tranksaksi">Transaction History</a></td>
+                <td align="center"><a href="/Policy">Policy</a></td>
+                <td align="center"><a href="/Logout">Logout</a></td>
+            </tr>
+        </table>
+            <br>
+            <br>
+        <table border="1" solid, align="center">
+            <tr>
+                <td rowspan="6">
+                    <img src="img/download.jpg" alt="Iphone 13">
+                </td>
+                <td>
+                    Tittle Here :
+                </td>
+                <td>
+                    <label>Iphone 13 pro max</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Description :</td>
+                <td> 
+                    <textarea maxlength="250" placeholder="No more than 250 characters long" cols="20" rows="5">Year   :  2022      model  :  New Edition              Condition : GOD </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Number: 
+                </td>
+                <td><input type="text" required placeholder="123-456-789"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Bank:</td>
+                <td>
+                    <select name="" id="">
+                        <option value="Bank">--Slahkan Pilih--</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BRI">BRI</option>
+                        <option value="VISA">VISA</option>
+                        <option value="BNI">BNI</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Holder:</td>
+                <td>
+                    <input type="text" placeholder="Select name">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Transaction :</td>
+                <td>
+                    <input type="number" min="1" max="10">
+                    <ul style="list-style-type: none;">
+                    <li><input type="checkbox" checked>
+                        Send To mobile phone</li>
+                        <li><input type="checkbox" checked>
+                        Send To Email</li>
+                    </ul>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Send To Mobile Phone :</td>
+                <td>
+                    <input type="text" placeholder="123456789,4532">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                </td>
+                <td>Send To Email</td>
+                <td>
+                    <input type="text" placeholder="Iphone345@gmail.com">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <center><input type="submit" value="Generate Link" style="background-color: green; height: 20px;"></center>
+
+    </form>
+</body>
+</html>
