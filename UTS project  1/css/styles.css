@@ -1,0 +1,14 @@
+.ul{
+    display: flex;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    list-style: none;
+    padding: .5em;
+    margin: 0;
+}
+li{
+    margin: 0 1em;
+}
+li.logo{
+    margin-right: auto;
+}
