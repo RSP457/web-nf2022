@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        * {
+            margin-bottom: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #ccc;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            padding: 25px 30px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        .container .title {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+            text-align: center;
+        }
+
+        .container .title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+        }
+
+        .container form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+
+        .container form .user-details .input-box {
+            margin: 20px 0 12px 0;
+            width: calc(100% / 2 - 20px);
+        }
+
+        .user-details .input-box .details {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+
+        }
+
+        .container form .user-details .input-box input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+
+        .button input[type="submit"] {
+            align-items: center;
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100px;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+            background: #ff9100;
+            text-shadow: #71b7e6;
+        }
+
+        .button input[type="submit"]:hover {
+            cursor: pointer;
+            background: #00e1ff;
+            color: #fff;
+            align-items: center;
+        }
+
+        #Tujuan {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Form Validation</div>
+        <form onsubmit="buy()">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nama Pelanggan</span>
+                    <input type="text" name="nama" placeholder="masukkan nama" id="Name" required maxlength="30">
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" name="email" placeholder="masukkan email" id="email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Jam Keberangkatan</span>
+                    <input type="time" name="" id="time">
+                </div>
+                <div class="input-box">
+                    <span class="details">Tujuan Keberangkatan</span>
+                    <select name="" id="Tujuan">
+                        <option value="0">---Kota Tujuan---</option>
+                        <option value="JKT">Jakarta</option>
+                        <option value="PLMB">Palembang</option>
+                        <option value="Bali">Bali</option>
+                        <option value="YK">Yogyakarta</option>
+                        <option value="SU">Surabaya</option>
+                        <option value="BD">Bandung</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Jumlah Ticket</span>
+                    <input type="number" min="1" max="10" placeholder="max 10" id="jumlah">
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Buy Ticket" id="jumlah">
+            </div>
+        </form>
+    </div>
+    <script src="navigas.js"></script>
+</body>
+
+</html>
